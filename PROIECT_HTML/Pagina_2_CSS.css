@@ -1,0 +1,226 @@
+.navigare{
+    width:fit-content;
+    height: max-content;
+    background-color: burlywood;
+}
+body{
+    height:100vh;
+    background-image: linear-gradient(to bottom,cyan,lime);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown {
+    position:fixed;
+    height: max-content;
+    background-color: rgb(4, 255, 171);
+    color:blue;
+    font-size: x-large;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(4, 255, 171);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.Grid{
+    height: min-content;
+    display:grid;
+    margin-top:100px;
+    background-color:rgb(0, 0, 0);
+    color:blanchedalmond;
+    gap:5px;
+    grid-template-columns: 
+    1fr 1fr 1fr;
+    grid-template-rows: 
+    150px 150px;
+    border:3px;
+    border-color: black;
+    border-style: groove;
+}
+.Grid_Item_1{
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.Grid_Item_2{
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.Grid_Item_3{
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.Grid_v2{
+    margin:15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 3px;
+    border-color:black;
+    background-color: black;
+    border-style: groove;
+    grid-template-areas:
+    'stanga mijloc1 dreapta1'
+    'stanga mijloc2 dreapta2'
+    'stanga mijloc3 dreapta3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:5px;
+}
+.stanga{
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+    grid-area:stanga;
+}
+.mijloc1{
+    grid-area: mijloc1;
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.mijloc2{
+    grid-area: mijloc2;
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.mijloc3{
+    grid-area: mijloc3;
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.dreapta1{
+    grid-area: dreapta1;
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.dreapta2{
+    grid-area: dreapta2;
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.dreapta3{
+    grid-area: dreapta3;
+    background-color: rgb(106, 207, 97);
+    color:rgb(0, 121, 143);
+    font-size: xx-large;
+    text-align: center;
+}
+.Flex_pt_griduri{
+    display:flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:450px){
+    .Grid{
+        gap:3px;
+        grid-template-rows: 100px 100px;
+        margin-top: 50px;
+    }
+    .Grid_v2{
+        gap:3px;
+    }
+    .Grid_Item_1{
+        font-size:small;
+        grid-template-columns: 100px 100px 100px;
+    }
+    .Grid_Item_2{
+        font-size:small;
+    }
+    .mijloc1{
+        font-size: small;
+    }
+    .mijloc2{
+        font-size: small;
+    }
+    .mijloc3{
+        font-size:small;
+    }
+    .dreapta1{
+        font-size:small;
+    }
+    .dreapta2{
+        font-size:small;
+    }
+    .dreapta3{
+        font-size: small;
+    }
+    .stanga{
+        font-size:small;
+    }
+    .Flex_pt_griduri{
+        flex-direction: column;
+    }
+    .dropdown{
+        font-size: small;
+    }
+}
+@media only screen and (max-width:900px) and (min-width:451px){
+    .Grid{
+        gap:3px;
+        grid-template-rows: 100px 100px;
+        margin-top: 75px;
+    }
+    .Grid_v2{
+        gap:3px;
+    }
+    .Grid_Item_1{
+        font-size:larger;
+        grid-template-columns: 100px 100px 100px;
+    }
+    .Grid_Item_2{
+        font-size:larger;
+    }
+    .mijloc1{
+        font-size: larger;
+    }
+    .mijloc2{
+        font-size: larger;
+    }
+    .mijloc3{
+        font-size:larger;
+    }
+    .dreapta1{
+        font-size:larger;
+    }
+    .dreapta2{
+        font-size:larger;
+    }
+    .dreapta3{
+        font-size: larger;
+    }
+    .stanga{
+        font-size:larger;
+    }
+    .Flex_pt_griduri{
+        flex-direction: column;
+    }
+    .dropdown{
+        font-size: large;
+    }
+}
