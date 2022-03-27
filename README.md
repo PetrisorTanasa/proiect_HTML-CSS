@@ -1,1 +1,1 @@
-https://petrisortanasa.github.io/proiect_HTML-CSS/PROIECT_HTML/Pagina_1.html
+https://petrisortanasa.github.io/proiect_HTML-CSS/PROIECT_HTML/Pagina_1_Home.html
