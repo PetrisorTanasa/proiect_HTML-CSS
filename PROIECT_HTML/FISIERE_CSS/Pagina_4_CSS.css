@@ -80,6 +80,24 @@ a{
     display: flex;
     flex-direction: row;
 }
+@keyframes cubu_plimbaret{
+    0%{left:0px;top:0px;}
+    25%{left:200px;top:0px;}
+    50%{left:200px;top:200px;}
+    75%{left:0px;top:200px;}
+    100%{left:0px;top:0px;}
+}
+.Animatie{
+    width:50px;
+    height:50px;
+    position:relative;
+    background-color: yellowgreen;
+    animation-name: cubu_plimbaret;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
 
 @media only screen and (max-width:450px){
     .Header{
@@ -104,6 +122,9 @@ a{
     .Hobbyuri{
         margin-top: 45px;
     }
+    .Animatie{
+        display: none;
+    }
 }
 
 @media only screen and (max-width:900px) and (min-width:451px){
@@ -122,5 +143,8 @@ a{
     }
     .dropdown{
         font-size: large;
+    }
+    .Animatie{
+        display: none;
     }
 }
