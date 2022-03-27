@@ -5,7 +5,7 @@
 }
 body{
     height:130vh;
-    width: 100%;
+
     background-image: linear-gradient(to bottom,cyan,lime);
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -92,7 +92,7 @@ a{
         width:230px;
         height:200px;
     }
-    .flexbox_imagini{
+    .Imagini{
         flex-direction: column;
     }
     .Imagini{
@@ -117,7 +117,10 @@ a{
         width:350px;
         height:300px;
     }
-    .flexbox_imagini{
+    .Imagini{
         flex-direction: column;
+    }
+    .dropdown{
+        font-size: large;
     }
 }
