@@ -16,6 +16,8 @@
             <div class="Hobbies"><a href="Pagina_4_Hobbies.html">Hobbies</a></div>
             <div class="Hobbies"><a href="Pagina_5_PianJavaScript.html">Play the piano!</a></div>
             <div class="Hobbies"><a href="Pagina_6_RandomGenerator.html">Random generator!</a></div>
+            <div class="Hobbies"><a href="Pagina_7_Info.html">Personal life information</a></div>
+            <div class="Hobbies"><a href="Pagina_8_Cub.html">Play with the cube</a></div>
         </div>
         <div class="Descriere">
             <h2 id="Neimportant">Who am I?</h2><br>
@@ -26,7 +28,10 @@
         </div>
         <form>
             <label>For any feedback on the page, fill the textbox below!
-            <input type="text" class="Feedback">
+            <input id="review" type="text" class="Feedback">
+        </label>
+            <label>Nume
+            <input id="numeaaa" type="text" class="Feedback">
             </label>
             <label>Please rate the website!<br></label>
                 <input type="radio" name="k">5
@@ -40,8 +45,9 @@
                 <input type="checkbox">Female
                 <input type="checkbox">Other
             <br>
-            <button>Submit</button>
+            <button onclick="Salveaza()">Submit</button>
         </form>
     </div>
+    <script src="JavaScript/JavaScriptReview.js"></script>
 </body>
 </html>
