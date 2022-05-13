@@ -57,3 +57,20 @@ function D(){
     if(pozitie > 950){miscare.stopPropagation()}
     patrat.style.left = pozitie + 'px';
 }
+
+function lightdark(){
+    let elemnent = document.getElementById('divi')
+    let patri = document.getElementById('patrat')
+    let badi = document.getElementById('bodi')
+    if(elemnent.style.backgroundColor == 'coral'){
+        elemnent.style.backgroundColor = 'grey';
+        patri.style.backgroundColor = 'darkgrey';
+        badi.style.backgroundColor='black';
+        badi.style.color = 'grey';
+    }
+    else{
+        badi.style.backgroundColor = 'white';
+        patri.style.backgroundColor = 'aquamarine';
+        elemnent.style.backgroundColor = 'coral';
+    }
+}
