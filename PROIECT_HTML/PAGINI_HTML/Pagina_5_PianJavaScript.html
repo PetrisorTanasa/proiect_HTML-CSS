@@ -3,7 +3,45 @@
     <head>
         <title>Games</title>
     </head>
+    <style>
+    .dropdown {
+        position:fixed;
+        height: max-content;
+        background-color: rgb(4, 255, 171);
+        color:blue;
+        font-size: x-large;
+      }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(4, 255, 171);
+        min-width: 240px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+    
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
     <body id="bodi" style="background-color:rgb(63, 136, 124)">
+        <nav class="dropdown">
+            <p>Navigation</p>
+            <div class="dropdown-content">
+                <span>
+            <a href="Pagina_1_Home.html">Home</a><br>
+            <a href="Pagina_2_Education.html">Education</a><br>
+            <a href="Pagina_3_Abilities.html">Abilities</a><br>
+            <a href="Pagina_4_Hobbies.html">Hobbies</a><br>
+            <a href="Pagina_5_PianJavaScript.html">Piano</a><br>
+            <a href="Pagina_6_RandomGenerator.html">Random Generator</a><br>
+            <a href="Pagina_7_Info.html">Personal info</a><br>
+            <a href="Pagina_8_Cub.html">The cube</a><br>
+            <a href="Pagina_9_CautareCuvinte.html">REGEX search</a>
+                </span>
+            </div>
+        </nav>
         <div><pre style="font-size:x-large;color:cadetblue">
             Play the instrument!
             By pressing the 1-8 digits (not on Numpad!) you will emit a musical note.

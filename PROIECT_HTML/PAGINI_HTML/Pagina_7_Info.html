@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            .dropdown {
+                position:absolute;
+                left:1700px;
+                height: max-content;
+                background-color: rgb(4, 255, 171);
+                color:blue;
+                font-size: x-large;
+              }
+              
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                
+                background-color: rgb(4, 255, 171);
+                min-width: 240px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+            
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            </style>
     </head>
     <body>
+        <nav class="dropdown">
+            <p>Navigation</p>
+            <div class="dropdown-content">
+                <span>
+            <a href="Pagina_1_Home.html">Home</a><br>
+            <a href="Pagina_2_Education.html">Education</a><br>
+            <a href="Pagina_3_Abilities.html">Abilities</a><br>
+            <a href="Pagina_4_Hobbies.html">Hobbies</a><br>
+            <a href="Pagina_5_PianJavaScript.html">Piano</a><br>
+            <a href="Pagina_6_RandomGenerator.html">Random Generator</a><br>
+            <a href="Pagina_8_Cub.html">The cube</a><br>
+            <a href="Pagina_9_CautareCuvinte.html">REGEX search</a>
+                </span>
+            </div>
+        </nav>
         <button style="width:50px;height:50px"onclick="info_afis()"></button>
         <script src="JavaScript/JavaScriptInfo.js"></script>
     </body>

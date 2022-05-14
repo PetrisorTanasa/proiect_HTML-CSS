@@ -62,15 +62,23 @@ function lightdark(){
     let elemnent = document.getElementById('divi')
     let patri = document.getElementById('patrat')
     let badi = document.getElementById('bodi')
+    let drop = document.getElementById('dropdown')
+    let dropCont = document.getElementById('dropdown-content')
     if(elemnent.style.backgroundColor == 'coral'){
         elemnent.style.backgroundColor = 'grey';
         patri.style.backgroundColor = 'darkgrey';
         badi.style.backgroundColor='black';
         badi.style.color = 'grey';
+        drop.style.backgroundColor = 'grey'
+        drop.style.color='darkblue'
+        dropCont.style.backgroundColor='grey'
     }
     else{
         badi.style.backgroundColor = 'white';
         patri.style.backgroundColor = 'aquamarine';
         elemnent.style.backgroundColor = 'coral';
+        drop.style.backgroundColor = 'rgb(4, 255, 171)'
+        drop.style.color='blue'
+        dropCont.style.backgroundColor='rgb(4, 255, 171)'
     }
 }
