@@ -1,4 +1,3 @@
-// Ex 3
 
 let b = document.getElementById('bodi');
 b.style.display = 'flex';
