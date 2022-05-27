@@ -22,10 +22,11 @@ function W(){
     pozitie = pozitie.slice(0, -2);
     pozitie = parseFloat(pozitie);
     pozitie -= 5;
-    if(pozitie < 0){miscare.stopPropagation()}
-    if(pozitie >950){miscare.stopPropagation()}
+
+if(pozitie > 0 && pozitie<950){
+
     patrat.style.top = pozitie + 'px';
-    
+}
 }
 function A(){
     let patrat = document.getElementById('patrat');
@@ -33,9 +34,10 @@ function A(){
     pozitie = pozitie.slice(0, -2);
     pozitie = parseFloat(pozitie);
     pozitie -= 5;
-    if(pozitie < 0){miscare.stopPropagation()}
-    if(pozitie > 950){miscare.stopPropagation()}
+if(pozitie > 0 && pozitie<950){
+
     patrat.style.left = pozitie + 'px';
+}
 }
 function S(){
     let patrat = document.getElementById('patrat');
@@ -43,9 +45,10 @@ function S(){
     pozitie = pozitie.slice(0, -2);
     pozitie = parseFloat(pozitie);
     pozitie += 5;
-    if(pozitie < 0){miscare.stopPropagation()}
-    if(pozitie >950){miscare.stopPropagation()}
+if(pozitie > 0 && pozitie<950){
+
     patrat.style.top = pozitie + 'px';
+}
 }
 function D(){
     let patrat = document.getElementById('patrat');
@@ -53,9 +56,10 @@ function D(){
     pozitie = pozitie.slice(0, -2);
     pozitie = parseFloat(pozitie);
     pozitie += 5;
-    if(pozitie < 0){miscare.stopPropagation()}
-    if(pozitie > 950){miscare.stopPropagation()}
+if(pozitie >0 && pozitie<950){
+
     patrat.style.left = pozitie + 'px';
+}
 }
 
 function lightdark(){
